@@ -1,0 +1,6 @@
+framework module Pods_Bebida_FractalTests {
+  umbrella header "Pods-Bebida-FractalTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

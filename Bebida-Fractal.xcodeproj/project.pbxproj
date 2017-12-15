@@ -1,0 +1,1111 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A60F7D525DB08109FBCD34D /* Pods_Bebida_Fractal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB0995F201C8C5211EB77C0 /* Pods_Bebida_Fractal.framework */; };
+		6DA780941FDF715300250CE1 /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA780931FDF715300250CE1 /* BeerListViewController.swift */; };
+		6DA780961FDF728500250CE1 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA780951FDF728500250CE1 /* Beer.swift */; };
+		6DA780A01FE12ABE00250CE1 /* BeerListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA7809F1FE12ABE00250CE1 /* BeerListPresenter.swift */; };
+		6DC4162C1FDF0842006790A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4162B1FDF0842006790A7 /* AppDelegate.swift */; };
+		6DC4162E1FDF0842006790A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4162D1FDF0842006790A7 /* ViewController.swift */; };
+		6DC416311FDF0842006790A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC4162F1FDF0842006790A7 /* Main.storyboard */; };
+		6DC416331FDF0842006790A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC416321FDF0842006790A7 /* Assets.xcassets */; };
+		6DC416361FDF0842006790A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC416341FDF0842006790A7 /* LaunchScreen.storyboard */; };
+		6DC416411FDF0842006790A7 /* Bebida_FractalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC416401FDF0842006790A7 /* Bebida_FractalTests.swift */; };
+		6DC4164C1FDF0842006790A7 /* Bebida_FractalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4164B1FDF0842006790A7 /* Bebida_FractalUITests.swift */; };
+		6DC912911FE142130006EBB1 /* BeerListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC912901FE142130006EBB1 /* BeerListInteractor.swift */; };
+		6DC912931FE196D50006EBB1 /* BeerListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC912921FE196D50006EBB1 /* BeerListRouter.swift */; };
+		6DC912981FE1985D0006EBB1 /* BeerListRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC912971FE1985D0006EBB1 /* BeerListRemoteDataManager.swift */; };
+		6DC9129A1FE199310006EBB1 /* BeerListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC912991FE199310006EBB1 /* BeerListProtocols.swift */; };
+		6DC9129C1FE19EE10006EBB1 /* BeerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC9129B1FE19EE10006EBB1 /* BeerViewCell.swift */; };
+		6DC9129E1FE1AF980006EBB1 /* FavoriteBeerLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC9129D1FE1AF980006EBB1 /* FavoriteBeerLocalDataManager.swift */; };
+		6DC912A01FE1B15B0006EBB1 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC9129F1FE1B15B0006EBB1 /* Endpoints.swift */; };
+		6DC912A31FE1B1E60006EBB1 /* PersistenceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC912A21FE1B1E60006EBB1 /* PersistenceError.swift */; };
+		6DC912A51FE1B48F0006EBB1 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC912A41FE1B48F0006EBB1 /* BeerDetailViewController.swift */; };
+		6DC912A91FE1B7A50006EBB1 /* BeerDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC912A81FE1B7A50006EBB1 /* BeerDetailPresenter.swift */; };
+		6DC912AB1FE1B8440006EBB1 /* BeerDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC912AA1FE1B8440006EBB1 /* BeerDetailProtocols.swift */; };
+		6DC912AD1FE1B98D0006EBB1 /* BeerDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC912AC1FE1B98D0006EBB1 /* BeerDetailRouter.swift */; };
+		6DC912AF1FE3CEC10006EBB1 /* FavoriteBeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC912AE1FE3CEC10006EBB1 /* FavoriteBeer.swift */; };
+		6DC912B11FE3D1CE0006EBB1 /* FavoriteBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC912B01FE3D1CE0006EBB1 /* FavoriteBeerViewController.swift */; };
+		6DC912B31FE3D4C30006EBB1 /* FavoriteViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC912B21FE3D4C30006EBB1 /* FavoriteViewCell.swift */; };
+		6DC912B51FE3DCEE0006EBB1 /* FavoriteBeerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC912B41FE3DCEE0006EBB1 /* FavoriteBeerPresenter.swift */; };
+		6DC912B71FE3E47F0006EBB1 /* FavoriteBeerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC912B61FE3E47F0006EBB1 /* FavoriteBeerRouter.swift */; };
+		6DC912B91FE3EA4A0006EBB1 /* FavoriteBeerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC912B81FE3EA4A0006EBB1 /* FavoriteBeerInteractor.swift */; };
+		6DC912BB1FE3EB5F0006EBB1 /* FavoriteBeerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC912BA1FE3EB5F0006EBB1 /* FavoriteBeerProtocols.swift */; };
+		7A07BB06A52D69A0A63F2237 /* Pods_Bebida_Fractal_Bebida_FractalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E01623277DFFA65867C4A6 /* Pods_Bebida_Fractal_Bebida_FractalTests.framework */; };
+		85D369CDB7D74B684B317314 /* Pods_Bebida_FractalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B5FBC90F5402D7739B242C /* Pods_Bebida_FractalTests.framework */; };
+		F7D968B465E68C1C34500FB3 /* Pods_Bebida_FractalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B58A92E596553FFD4439C3 /* Pods_Bebida_FractalUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DC4163D1FDF0842006790A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DC416201FDF0842006790A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DC416271FDF0842006790A7;
+			remoteInfo = "Bebida-Fractal";
+		};
+		6DC416481FDF0842006790A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DC416201FDF0842006790A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DC416271FDF0842006790A7;
+			remoteInfo = "Bebida-Fractal";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04B58A92E596553FFD4439C3 /* Pods_Bebida_FractalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bebida_FractalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B3C8E3F353EB977ACEC26F5 /* Pods-Bebida-FractalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bebida-FractalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bebida-FractalUITests/Pods-Bebida-FractalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0F58B4622F430FC3E0413C18 /* Pods-Bebida-Fractal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bebida-Fractal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bebida-Fractal/Pods-Bebida-Fractal.debug.xcconfig"; sourceTree = "<group>"; };
+		1111AE06630CA4538AFBF8AA /* Pods-Bebida-Fractal-Bebida-FractalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bebida-Fractal-Bebida-FractalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bebida-Fractal-Bebida-FractalTests/Pods-Bebida-Fractal-Bebida-FractalTests.release.xcconfig"; sourceTree = "<group>"; };
+		2141476906C1EE31434A4B8B /* Pods-Bebida-FractalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bebida-FractalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bebida-FractalTests/Pods-Bebida-FractalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		44B5FBC90F5402D7739B242C /* Pods_Bebida_FractalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bebida_FractalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E01623277DFFA65867C4A6 /* Pods_Bebida_Fractal_Bebida_FractalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bebida_Fractal_Bebida_FractalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DA780931FDF715300250CE1 /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
+		6DA780951FDF728500250CE1 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		6DA7809F1FE12ABE00250CE1 /* BeerListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListPresenter.swift; sourceTree = "<group>"; };
+		6DC416281FDF0842006790A7 /* Bebida-Fractal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bebida-Fractal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC4162B1FDF0842006790A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DC4162D1FDF0842006790A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6DC416301FDF0842006790A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DC416321FDF0842006790A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DC416351FDF0842006790A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DC416371FDF0842006790A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DC4163C1FDF0842006790A7 /* Bebida-FractalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bebida-FractalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC416401FDF0842006790A7 /* Bebida_FractalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bebida_FractalTests.swift; sourceTree = "<group>"; };
+		6DC416421FDF0842006790A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DC416471FDF0842006790A7 /* Bebida-FractalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bebida-FractalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC4164B1FDF0842006790A7 /* Bebida_FractalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bebida_FractalUITests.swift; sourceTree = "<group>"; };
+		6DC4164D1FDF0842006790A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DC912901FE142130006EBB1 /* BeerListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListInteractor.swift; sourceTree = "<group>"; };
+		6DC912921FE196D50006EBB1 /* BeerListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListRouter.swift; sourceTree = "<group>"; };
+		6DC912971FE1985D0006EBB1 /* BeerListRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListRemoteDataManager.swift; sourceTree = "<group>"; };
+		6DC912991FE199310006EBB1 /* BeerListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListProtocols.swift; sourceTree = "<group>"; };
+		6DC9129B1FE19EE10006EBB1 /* BeerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewCell.swift; sourceTree = "<group>"; };
+		6DC9129D1FE1AF980006EBB1 /* FavoriteBeerLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBeerLocalDataManager.swift; sourceTree = "<group>"; };
+		6DC9129F1FE1B15B0006EBB1 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		6DC912A21FE1B1E60006EBB1 /* PersistenceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceError.swift; sourceTree = "<group>"; };
+		6DC912A41FE1B48F0006EBB1 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
+		6DC912A81FE1B7A50006EBB1 /* BeerDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailPresenter.swift; sourceTree = "<group>"; };
+		6DC912AA1FE1B8440006EBB1 /* BeerDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailProtocols.swift; sourceTree = "<group>"; };
+		6DC912AC1FE1B98D0006EBB1 /* BeerDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailRouter.swift; sourceTree = "<group>"; };
+		6DC912AE1FE3CEC10006EBB1 /* FavoriteBeer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBeer.swift; sourceTree = "<group>"; };
+		6DC912B01FE3D1CE0006EBB1 /* FavoriteBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBeerViewController.swift; sourceTree = "<group>"; };
+		6DC912B21FE3D4C30006EBB1 /* FavoriteViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewCell.swift; sourceTree = "<group>"; };
+		6DC912B41FE3DCEE0006EBB1 /* FavoriteBeerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBeerPresenter.swift; sourceTree = "<group>"; };
+		6DC912B61FE3E47F0006EBB1 /* FavoriteBeerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBeerRouter.swift; sourceTree = "<group>"; };
+		6DC912B81FE3EA4A0006EBB1 /* FavoriteBeerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBeerInteractor.swift; sourceTree = "<group>"; };
+		6DC912BA1FE3EB5F0006EBB1 /* FavoriteBeerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBeerProtocols.swift; sourceTree = "<group>"; };
+		8A9CA567A063109504D01875 /* Pods-Bebida-FractalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bebida-FractalUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bebida-FractalUITests/Pods-Bebida-FractalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9CB0995F201C8C5211EB77C0 /* Pods_Bebida_Fractal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bebida_Fractal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B16EA3F8AD153398D3426A0B /* Pods-Bebida-Fractal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bebida-Fractal.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bebida-Fractal/Pods-Bebida-Fractal.release.xcconfig"; sourceTree = "<group>"; };
+		C6495F4F674B3169615CF664 /* Pods-Bebida-Fractal-Bebida-FractalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bebida-Fractal-Bebida-FractalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bebida-Fractal-Bebida-FractalTests/Pods-Bebida-Fractal-Bebida-FractalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA23593C26B999ECEFD37C70 /* Pods-Bebida-FractalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bebida-FractalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bebida-FractalTests/Pods-Bebida-FractalTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DC416251FDF0842006790A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A60F7D525DB08109FBCD34D /* Pods_Bebida_Fractal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC416391FDF0842006790A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D369CDB7D74B684B317314 /* Pods_Bebida_FractalTests.framework in Frameworks */,
+				7A07BB06A52D69A0A63F2237 /* Pods_Bebida_Fractal_Bebida_FractalTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC416441FDF0842006790A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7D968B465E68C1C34500FB3 /* Pods_Bebida_FractalUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DA780791FDF4CB100250CE1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6DA7808C1FDF4F5700250CE1 /* Favorite */,
+				6DA780801FDF4D3E00250CE1 /* Detail */,
+				6DA7807A1FDF4CBC00250CE1 /* List */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6DA7807A1FDF4CBC00250CE1 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				6DC912A61FE1B6BA0006EBB1 /* Contract */,
+				6DA7807E1FDF4CEE00250CE1 /* Interactor */,
+				6DA7807D1FDF4CE300250CE1 /* Router */,
+				6DA7807C1FDF4CD700250CE1 /* Presenter */,
+				6DA7807B1FDF4CCF00250CE1 /* View */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		6DA7807B1FDF4CCF00250CE1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6DA780931FDF715300250CE1 /* BeerListViewController.swift */,
+				6DC9129B1FE19EE10006EBB1 /* BeerViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6DA7807C1FDF4CD700250CE1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6DA7809F1FE12ABE00250CE1 /* BeerListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6DA7807D1FDF4CE300250CE1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6DC912921FE196D50006EBB1 /* BeerListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6DA7807E1FDF4CEE00250CE1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6DC912901FE142130006EBB1 /* BeerListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6DA780801FDF4D3E00250CE1 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				6DC912A71FE1B6C40006EBB1 /* Contract */,
+				6DA780831FDF4D7700250CE1 /* Router */,
+				6DA780821FDF4D6E00250CE1 /* Presenter */,
+				6DA780811FDF4D6500250CE1 /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		6DA780811FDF4D6500250CE1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6DC912A41FE1B48F0006EBB1 /* BeerDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6DA780821FDF4D6E00250CE1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6DC912A81FE1B7A50006EBB1 /* BeerDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6DA780831FDF4D7700250CE1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6DC912AC1FE1B98D0006EBB1 /* BeerDetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6DA780861FDF4DB200250CE1 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		6DA780871FDF4DC300250CE1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6DC912A11FE1B1C40006EBB1 /* Enum */,
+				6DA7808B1FDF4F3F00250CE1 /* Protocols */,
+				6DA780881FDF4DCE00250CE1 /* Data Manager */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6DA780881FDF4DCE00250CE1 /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6DA7808A1FDF4F2F00250CE1 /* Local */,
+				6DA780891FDF4F2600250CE1 /* API */,
+			);
+			path = "Data Manager";
+			sourceTree = "<group>";
+		};
+		6DA780891FDF4F2600250CE1 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6DC912971FE1985D0006EBB1 /* BeerListRemoteDataManager.swift */,
+				6DC9129F1FE1B15B0006EBB1 /* Endpoints.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		6DA7808A1FDF4F2F00250CE1 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				6DC9129D1FE1AF980006EBB1 /* FavoriteBeerLocalDataManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		6DA7808B1FDF4F3F00250CE1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6DA7808C1FDF4F5700250CE1 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				6DA780911FDF4FA200250CE1 /* Contract */,
+				6DA780901FDF4F9000250CE1 /* Interactor */,
+				6DA7808F1FDF4F8400250CE1 /* Router */,
+				6DA7808E1FDF4F7300250CE1 /* Presenter */,
+				6DA7808D1FDF4F6B00250CE1 /* View */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		6DA7808D1FDF4F6B00250CE1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6DC912B01FE3D1CE0006EBB1 /* FavoriteBeerViewController.swift */,
+				6DC912B21FE3D4C30006EBB1 /* FavoriteViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6DA7808E1FDF4F7300250CE1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6DC912B41FE3DCEE0006EBB1 /* FavoriteBeerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6DA7808F1FDF4F8400250CE1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6DC912B61FE3E47F0006EBB1 /* FavoriteBeerRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6DA780901FDF4F9000250CE1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6DC912B81FE3EA4A0006EBB1 /* FavoriteBeerInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6DA780911FDF4FA200250CE1 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				6DC912BA1FE3EB5F0006EBB1 /* FavoriteBeerProtocols.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		6DA780921FDF514900250CE1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6DA780951FDF728500250CE1 /* Beer.swift */,
+				6DC912AE1FE3CEC10006EBB1 /* FavoriteBeer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6DC4161F1FDF0842006790A7 = {
+			isa = PBXGroup;
+			children = (
+				6DC4162A1FDF0842006790A7 /* Bebida-Fractal */,
+				6DC4163F1FDF0842006790A7 /* Bebida-FractalTests */,
+				6DC4164A1FDF0842006790A7 /* Bebida-FractalUITests */,
+				6DC416291FDF0842006790A7 /* Products */,
+				92ABAFFABE698E43B63F7F0F /* Pods */,
+				892D7A75206A3B3CE6A4A1DE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6DC416291FDF0842006790A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DC416281FDF0842006790A7 /* Bebida-Fractal.app */,
+				6DC4163C1FDF0842006790A7 /* Bebida-FractalTests.xctest */,
+				6DC416471FDF0842006790A7 /* Bebida-FractalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DC4162A1FDF0842006790A7 /* Bebida-Fractal */ = {
+			isa = PBXGroup;
+			children = (
+				6DA780921FDF514900250CE1 /* Models */,
+				6DA780871FDF4DC300250CE1 /* Utils */,
+				6DA780861FDF4DB200250CE1 /* Entities */,
+				6DA780791FDF4CB100250CE1 /* Modules */,
+				6DC4162B1FDF0842006790A7 /* AppDelegate.swift */,
+				6DC4162D1FDF0842006790A7 /* ViewController.swift */,
+				6DC4162F1FDF0842006790A7 /* Main.storyboard */,
+				6DC416321FDF0842006790A7 /* Assets.xcassets */,
+				6DC416341FDF0842006790A7 /* LaunchScreen.storyboard */,
+				6DC416371FDF0842006790A7 /* Info.plist */,
+			);
+			path = "Bebida-Fractal";
+			sourceTree = "<group>";
+		};
+		6DC4163F1FDF0842006790A7 /* Bebida-FractalTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DC416401FDF0842006790A7 /* Bebida_FractalTests.swift */,
+				6DC416421FDF0842006790A7 /* Info.plist */,
+			);
+			path = "Bebida-FractalTests";
+			sourceTree = "<group>";
+		};
+		6DC4164A1FDF0842006790A7 /* Bebida-FractalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6DC4164B1FDF0842006790A7 /* Bebida_FractalUITests.swift */,
+				6DC4164D1FDF0842006790A7 /* Info.plist */,
+			);
+			path = "Bebida-FractalUITests";
+			sourceTree = "<group>";
+		};
+		6DC912A11FE1B1C40006EBB1 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				6DC912A21FE1B1E60006EBB1 /* PersistenceError.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		6DC912A61FE1B6BA0006EBB1 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				6DC912991FE199310006EBB1 /* BeerListProtocols.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		6DC912A71FE1B6C40006EBB1 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				6DC912AA1FE1B8440006EBB1 /* BeerDetailProtocols.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		892D7A75206A3B3CE6A4A1DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CB0995F201C8C5211EB77C0 /* Pods_Bebida_Fractal.framework */,
+				44B5FBC90F5402D7739B242C /* Pods_Bebida_FractalTests.framework */,
+				04B58A92E596553FFD4439C3 /* Pods_Bebida_FractalUITests.framework */,
+				49E01623277DFFA65867C4A6 /* Pods_Bebida_Fractal_Bebida_FractalTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92ABAFFABE698E43B63F7F0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F58B4622F430FC3E0413C18 /* Pods-Bebida-Fractal.debug.xcconfig */,
+				B16EA3F8AD153398D3426A0B /* Pods-Bebida-Fractal.release.xcconfig */,
+				2141476906C1EE31434A4B8B /* Pods-Bebida-FractalTests.debug.xcconfig */,
+				CA23593C26B999ECEFD37C70 /* Pods-Bebida-FractalTests.release.xcconfig */,
+				8A9CA567A063109504D01875 /* Pods-Bebida-FractalUITests.debug.xcconfig */,
+				0B3C8E3F353EB977ACEC26F5 /* Pods-Bebida-FractalUITests.release.xcconfig */,
+				C6495F4F674B3169615CF664 /* Pods-Bebida-Fractal-Bebida-FractalTests.debug.xcconfig */,
+				1111AE06630CA4538AFBF8AA /* Pods-Bebida-Fractal-Bebida-FractalTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DC416271FDF0842006790A7 /* Bebida-Fractal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DC416501FDF0842006790A7 /* Build configuration list for PBXNativeTarget "Bebida-Fractal" */;
+			buildPhases = (
+				2A49743027A113200EE1D97B /* [CP] Check Pods Manifest.lock */,
+				6DC416241FDF0842006790A7 /* Sources */,
+				6DC416251FDF0842006790A7 /* Frameworks */,
+				6DC416261FDF0842006790A7 /* Resources */,
+				8D4E6EBC4FFB9A1D0034F739 /* [CP] Embed Pods Frameworks */,
+				5B8AB51F06F75347E2B5C165 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bebida-Fractal";
+			productName = "Bebida-Fractal";
+			productReference = 6DC416281FDF0842006790A7 /* Bebida-Fractal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DC4163B1FDF0842006790A7 /* Bebida-FractalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DC416531FDF0842006790A7 /* Build configuration list for PBXNativeTarget "Bebida-FractalTests" */;
+			buildPhases = (
+				118BF6C63A5572CDEAB61131 /* [CP] Check Pods Manifest.lock */,
+				6DC416381FDF0842006790A7 /* Sources */,
+				6DC416391FDF0842006790A7 /* Frameworks */,
+				6DC4163A1FDF0842006790A7 /* Resources */,
+				7A57FE8C4E8D8B1F54F9D753 /* [CP] Embed Pods Frameworks */,
+				A6A90FCA16D6E07A8C0D31FE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DC4163E1FDF0842006790A7 /* PBXTargetDependency */,
+			);
+			name = "Bebida-FractalTests";
+			productName = "Bebida-FractalTests";
+			productReference = 6DC4163C1FDF0842006790A7 /* Bebida-FractalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6DC416461FDF0842006790A7 /* Bebida-FractalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DC416561FDF0842006790A7 /* Build configuration list for PBXNativeTarget "Bebida-FractalUITests" */;
+			buildPhases = (
+				36F84870F44FF0C13B826638 /* [CP] Check Pods Manifest.lock */,
+				6DC416431FDF0842006790A7 /* Sources */,
+				6DC416441FDF0842006790A7 /* Frameworks */,
+				6DC416451FDF0842006790A7 /* Resources */,
+				909714D730327C10221D67EE /* [CP] Embed Pods Frameworks */,
+				AB8970559493AC52A35D3975 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DC416491FDF0842006790A7 /* PBXTargetDependency */,
+			);
+			name = "Bebida-FractalUITests";
+			productName = "Bebida-FractalUITests";
+			productReference = 6DC416471FDF0842006790A7 /* Bebida-FractalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DC416201FDF0842006790A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Empresinha;
+				TargetAttributes = {
+					6DC416271FDF0842006790A7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					6DC4163B1FDF0842006790A7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6DC416271FDF0842006790A7;
+					};
+					6DC416461FDF0842006790A7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6DC416271FDF0842006790A7;
+					};
+				};
+			};
+			buildConfigurationList = 6DC416231FDF0842006790A7 /* Build configuration list for PBXProject "Bebida-Fractal" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DC4161F1FDF0842006790A7;
+			productRefGroup = 6DC416291FDF0842006790A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DC416271FDF0842006790A7 /* Bebida-Fractal */,
+				6DC4163B1FDF0842006790A7 /* Bebida-FractalTests */,
+				6DC416461FDF0842006790A7 /* Bebida-FractalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DC416261FDF0842006790A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC416361FDF0842006790A7 /* LaunchScreen.storyboard in Resources */,
+				6DC416331FDF0842006790A7 /* Assets.xcassets in Resources */,
+				6DC416311FDF0842006790A7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC4163A1FDF0842006790A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC416451FDF0842006790A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		118BF6C63A5572CDEAB61131 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bebida-FractalTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A49743027A113200EE1D97B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bebida-Fractal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36F84870F44FF0C13B826638 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bebida-FractalUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B8AB51F06F75347E2B5C165 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bebida-Fractal/Pods-Bebida-Fractal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A57FE8C4E8D8B1F54F9D753 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Bebida-Fractal-Bebida-FractalTests/Pods-Bebida-Fractal-Bebida-FractalTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bebida-FractalTests/Pods-Bebida-FractalTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D4E6EBC4FFB9A1D0034F739 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Bebida-Fractal/Pods-Bebida-Fractal-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bebida-Fractal/Pods-Bebida-Fractal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		909714D730327C10221D67EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bebida-FractalUITests/Pods-Bebida-FractalUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6A90FCA16D6E07A8C0D31FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bebida-FractalTests/Pods-Bebida-FractalTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB8970559493AC52A35D3975 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bebida-FractalUITests/Pods-Bebida-FractalUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DC416241FDF0842006790A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC9129C1FE19EE10006EBB1 /* BeerViewCell.swift in Sources */,
+				6DC912AF1FE3CEC10006EBB1 /* FavoriteBeer.swift in Sources */,
+				6DC912B51FE3DCEE0006EBB1 /* FavoriteBeerPresenter.swift in Sources */,
+				6DC9129E1FE1AF980006EBB1 /* FavoriteBeerLocalDataManager.swift in Sources */,
+				6DC9129A1FE199310006EBB1 /* BeerListProtocols.swift in Sources */,
+				6DC912911FE142130006EBB1 /* BeerListInteractor.swift in Sources */,
+				6DC912B91FE3EA4A0006EBB1 /* FavoriteBeerInteractor.swift in Sources */,
+				6DC4162E1FDF0842006790A7 /* ViewController.swift in Sources */,
+				6DC912931FE196D50006EBB1 /* BeerListRouter.swift in Sources */,
+				6DA780961FDF728500250CE1 /* Beer.swift in Sources */,
+				6DC912B11FE3D1CE0006EBB1 /* FavoriteBeerViewController.swift in Sources */,
+				6DC912A91FE1B7A50006EBB1 /* BeerDetailPresenter.swift in Sources */,
+				6DC912A51FE1B48F0006EBB1 /* BeerDetailViewController.swift in Sources */,
+				6DC4162C1FDF0842006790A7 /* AppDelegate.swift in Sources */,
+				6DC912AB1FE1B8440006EBB1 /* BeerDetailProtocols.swift in Sources */,
+				6DC912981FE1985D0006EBB1 /* BeerListRemoteDataManager.swift in Sources */,
+				6DA780A01FE12ABE00250CE1 /* BeerListPresenter.swift in Sources */,
+				6DC912BB1FE3EB5F0006EBB1 /* FavoriteBeerProtocols.swift in Sources */,
+				6DC912A01FE1B15B0006EBB1 /* Endpoints.swift in Sources */,
+				6DC912B31FE3D4C30006EBB1 /* FavoriteViewCell.swift in Sources */,
+				6DC912B71FE3E47F0006EBB1 /* FavoriteBeerRouter.swift in Sources */,
+				6DC912AD1FE1B98D0006EBB1 /* BeerDetailRouter.swift in Sources */,
+				6DC912A31FE1B1E60006EBB1 /* PersistenceError.swift in Sources */,
+				6DA780941FDF715300250CE1 /* BeerListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC416381FDF0842006790A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC416411FDF0842006790A7 /* Bebida_FractalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC416431FDF0842006790A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC4164C1FDF0842006790A7 /* Bebida_FractalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DC4163E1FDF0842006790A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DC416271FDF0842006790A7 /* Bebida-Fractal */;
+			targetProxy = 6DC4163D1FDF0842006790A7 /* PBXContainerItemProxy */;
+		};
+		6DC416491FDF0842006790A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DC416271FDF0842006790A7 /* Bebida-Fractal */;
+			targetProxy = 6DC416481FDF0842006790A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DC4162F1FDF0842006790A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DC416301FDF0842006790A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DC416341FDF0842006790A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DC416351FDF0842006790A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DC4164E1FDF0842006790A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DC4164F1FDF0842006790A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DC416511FDF0842006790A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F58B4622F430FC3E0413C18 /* Pods-Bebida-Fractal.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NBD68U8QX;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/**",
+				);
+				INFOPLIST_FILE = "Bebida-Fractal/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks $(inherited)";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Empresinha.Bebida-Fractal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DC416521FDF0842006790A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B16EA3F8AD153398D3426A0B /* Pods-Bebida-Fractal.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NBD68U8QX;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/**",
+				);
+				INFOPLIST_FILE = "Bebida-Fractal/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks $(inherited)";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Empresinha.Bebida-Fractal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6DC416541FDF0842006790A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2141476906C1EE31434A4B8B /* Pods-Bebida-FractalTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NBD68U8QX;
+				INFOPLIST_FILE = "Bebida-FractalTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Empresinha.Bebida-FractalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bebida-Fractal.app/Bebida-Fractal";
+			};
+			name = Debug;
+		};
+		6DC416551FDF0842006790A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA23593C26B999ECEFD37C70 /* Pods-Bebida-FractalTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NBD68U8QX;
+				INFOPLIST_FILE = "Bebida-FractalTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Empresinha.Bebida-FractalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bebida-Fractal.app/Bebida-Fractal";
+			};
+			name = Release;
+		};
+		6DC416571FDF0842006790A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A9CA567A063109504D01875 /* Pods-Bebida-FractalUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NBD68U8QX;
+				INFOPLIST_FILE = "Bebida-FractalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Empresinha.Bebida-FractalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bebida-Fractal";
+			};
+			name = Debug;
+		};
+		6DC416581FDF0842006790A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B3C8E3F353EB977ACEC26F5 /* Pods-Bebida-FractalUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NBD68U8QX;
+				INFOPLIST_FILE = "Bebida-FractalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Empresinha.Bebida-FractalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bebida-Fractal";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DC416231FDF0842006790A7 /* Build configuration list for PBXProject "Bebida-Fractal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DC4164E1FDF0842006790A7 /* Debug */,
+				6DC4164F1FDF0842006790A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DC416501FDF0842006790A7 /* Build configuration list for PBXNativeTarget "Bebida-Fractal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DC416511FDF0842006790A7 /* Debug */,
+				6DC416521FDF0842006790A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DC416531FDF0842006790A7 /* Build configuration list for PBXNativeTarget "Bebida-FractalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DC416541FDF0842006790A7 /* Debug */,
+				6DC416551FDF0842006790A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DC416561FDF0842006790A7 /* Build configuration list for PBXNativeTarget "Bebida-FractalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DC416571FDF0842006790A7 /* Debug */,
+				6DC416581FDF0842006790A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DC416201FDF0842006790A7 /* Project object */;
+}
