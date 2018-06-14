@@ -11,6 +11,7 @@ import UIKit
 class BeerListViewController: UIViewController {
 
     @IBOutlet weak var beerTableView: UITableView!
+    let searchController = UISearchController(searchResultsController: nil)
     var presenter : BeerListPresenterProtocol?
     var listBeer: [Beer] = []
     
@@ -22,10 +23,16 @@ class BeerListViewController: UIViewController {
         self.beerTableView.rowHeight = UITableViewAutomaticDimension
         self.beerTableView.estimatedRowHeight = 90
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func configSearchBar(){
+        self.searchController.searchResultsUpdater = self
+        self.searchController.obscuresBackgroundDuringPresentation = false
+        self.searchController.hidesNavigationBarDuringPresentation = false
+        self.searchController.searchBar.placeholder = "Pesquisar Competência"
+//        let scb = searchController.searchBar
+//        scb.tintColor = .white
+        self.navigationController?.navigationItem.searchController = searchController
+        self.definesPresentationContext = true
     }
 }
 
@@ -74,5 +81,17 @@ extension BeerListViewController : UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter?.showBeerDetail(forBeer: listBeer[indexPath.row])
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 90
+    }
+    
+}
+
+extension BeerListViewController: UISearchResultsUpdating{
+    func updateSearchResults(for searchController: UISearchController) {
+        print("manda pra algum lugar")
+    }
+    
     
 }
