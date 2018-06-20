@@ -34,6 +34,10 @@ class BeerListPresenter: BeerListPresenterProtocol{
         favor.title = favorite.title
         interactor?.deleteFavorite(favorite: favor)
     }
+    
+    func isFavorite(beer:Beer) -> Bool{
+        return (interactor?.isFavorite(beer: beer))!
+    }
 }
 
 extension BeerListPresenter: BeerListInteractorOutputProtocol {

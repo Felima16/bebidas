@@ -20,11 +20,8 @@ class BeerDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        self.navigationController?.navigationBar.topItem?.title = "Cervejas"
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.2901960784, green: 0.5647058824, blue: 0.8862745098, alpha: 1)
+        self.navigationController?.navigationBar.tintColor = .white
     }
     
 }

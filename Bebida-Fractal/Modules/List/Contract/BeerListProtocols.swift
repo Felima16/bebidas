@@ -37,6 +37,7 @@ protocol BeerListPresenterProtocol: class {
     func showBeerDetail(forBeer beer: Beer)
     func addFavorite(forBeer favorite: Beer)
     func deleteFavorite(forBeer favorite: Beer)
+    func isFavorite(beer: Beer) -> Bool
 }
 
 protocol BeerListInteractorOutputProtocol: class {
@@ -54,6 +55,7 @@ protocol BeerListInteractorInputProtocol: class {
     func retrieveBeerList()
     func saveFavorite(beer: Beer)
     func deleteFavorite(favorite: FavoriteBeer)
+    func isFavorite(beer: Beer) -> Bool
 }
 
 protocol BeerListDataManagerInputProtocol: class {
@@ -77,5 +79,6 @@ protocol BeerListLocalDataManagerInputProtocol: class {
     // INTERACTOR -> LOCALDATAMANAGER
     func saveBeer(tagLine: String, title: String, imageUrl: String, content: String) throws
     func deleteFavorite(favorite: FavoriteBeer)
+    func isFavorite(beer: Beer) -> Bool
 }
 

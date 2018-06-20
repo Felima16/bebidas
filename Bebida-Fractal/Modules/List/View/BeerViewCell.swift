@@ -41,5 +41,10 @@ class BeerViewCell: UITableViewCell {
         postImageView?.af_setImage(withURL: url, placeholderImage: placeholderImage)
         self.presenter = presenter
         self.beer = beer
+        select = presenter.isFavorite(beer: beer)
+        print(select)
+        let image = select ? UIImage(named: "iconFav-b") : UIImage(named: "iconFav-a")
+        favoriteButton.setImage(image, for: .normal)
     }
+    
 }

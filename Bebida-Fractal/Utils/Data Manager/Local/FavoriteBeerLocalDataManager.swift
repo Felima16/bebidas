@@ -58,4 +58,8 @@ class FavoriteBeerLocalDataManager:FavoriteBeerLocalDataManagerInputProtocol, Be
         }
     }
     
+    func isFavorite(beer: Beer) -> Bool {
+        return favoriteBeer.filter("title = %@ ", beer.title).count > 0 ? true : false
+    }
+    
 }

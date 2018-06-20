@@ -30,6 +30,10 @@ class BeerListInteractor: BeerListInteractorInputProtocol{
         localDatamanager?.deleteFavorite(favorite: favorite)
     }
     
+    func isFavorite(beer:Beer) -> Bool{
+        return (localDatamanager?.isFavorite(beer: beer))!
+    }
+    
 }
 
 extension BeerListInteractor: BeerListRemoteDataManagerOutputProtocol {
