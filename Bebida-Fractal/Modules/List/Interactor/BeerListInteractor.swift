@@ -26,8 +26,8 @@ class BeerListInteractor: BeerListInteractorInputProtocol{
         try! localDatamanager?.saveBeer(tagLine: beer.tagLine, title: beer.title, imageUrl: beer.imageUrl, content: beer.content)
     }
     
-    func deleteFavorite(favorite: FavoriteBeer){
-        localDatamanager?.deleteFavorite(favorite: favorite)
+    func deleteFavorite(favorite beer: Beer){
+        localDatamanager?.deleteFavorite(favorite: beer)
     }
     
     func isFavorite(beer:Beer) -> Bool{

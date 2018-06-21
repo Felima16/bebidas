@@ -17,12 +17,19 @@ class FavoriteBeerPresenter: FavoriteBeerPresenterProtocol{
         interactor?.retrieveFavoriteBeer()
     }
     
+    func viewWillAppear(){
+        interactor?.updateFavoriteBeer()
+    }
+    
     func showFavoriteDetail(forFavor favorite: FavoriteBeer){
         wireFrame?.presentBeerDetailScreen(from: view!, forFavor: favorite)
     }
 }
 
 extension FavoriteBeerPresenter: FavoriteBeerInteractorOutputProtocol {
+    func updateFavoriteBeers(_ favorites: [FavoriteBeer]) {
+        view?.reloadInterface(favorites)
+    }
     
     func didRetrieveBeers(_ favorites: [FavoriteBeer]) {
         view?.showFavorites(with: favorites)

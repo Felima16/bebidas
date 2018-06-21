@@ -12,12 +12,8 @@ import RealmSwift
 class FavoriteBeerLocalDataManager:FavoriteBeerLocalDataManagerInputProtocol, BeerListLocalDataManagerInputProtocol {
     
     var realm = try! Realm()
+    lazy var favoriteBeer: Results<FavoriteBeer> = { self.realm.objects(FavoriteBeer.self)} ()
     
-    var favoriteBeer: Results<FavoriteBeer> {
-        get {
-            return realm.objects(FavoriteBeer.self)
-        }
-    }
     
     func saveBeer(tagLine: String, title: String, imageUrl: String, content: String) throws {
         let favorite = FavoriteBeer()
@@ -29,12 +25,11 @@ class FavoriteBeerLocalDataManager:FavoriteBeerLocalDataManagerInputProtocol, Be
         try! self.realm.write({
             self.realm.add(favorite)
         })
+        
+        favoriteBeer = realm.objects(FavoriteBeer.self)
     }
     
     func retrieveFavoriteBeer() throws -> Results<FavoriteBeer> {
-        
-//        realm = try! Realm()
-        
         return favoriteBeer
     }
     
@@ -48,12 +43,18 @@ class FavoriteBeerLocalDataManager:FavoriteBeerLocalDataManagerInputProtocol, Be
         try! self.realm.write({
             self.realm.add(favorite)
         })
+        
+        favoriteBeer = realm.objects(FavoriteBeer.self)
     }
     
-    func deleteFavorite(favorite: FavoriteBeer) {
-        if favoriteBeer.contains(favorite){
+    func deleteFavorite(favorite: Beer) {
+        
+        let favorList = favoriteBeer.filter("title = %@", favorite.title)
+        let favor = favorList.first
+        
+        if let favor = favor{
             try! self.realm.write({
-                self.realm.delete(favorite)
+                self.realm.delete(favor)
             })
         }
     }

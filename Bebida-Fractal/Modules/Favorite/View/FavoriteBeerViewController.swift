@@ -23,14 +23,9 @@ class FavoriteBeerViewController: UIViewController {
         self.favoriteTableView.estimatedRowHeight = 90
     }
 
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        presenter?.viewWillAppear()
         self.favoriteTableView.reloadData()
     }
 
@@ -56,7 +51,6 @@ extension FavoriteBeerViewController : FavoriteBeerViewProtocol{
 extension FavoriteBeerViewController : UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(listFavorite.count)
         return listFavorite.count
     }
     
@@ -73,5 +67,9 @@ extension FavoriteBeerViewController : UITableViewDataSource, UITableViewDelegat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter?.showFavoriteDetail(forFavor: listFavorite[indexPath.row])
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 90
     }
 }

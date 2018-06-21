@@ -14,7 +14,7 @@ protocol FavoriteBeerViewProtocol: class {
     
     // PRESENTER -> VIEW
     func showFavorites(with favorites: [FavoriteBeer])
-    
+    func reloadInterface(_ favorites: [FavoriteBeer])
     func showError()
 
 }
@@ -32,12 +32,14 @@ protocol FavoriteBeerPresenterProtocol: class {
     
     // VIEW -> PRESENTER
     func viewDidLoad()
+    func viewWillAppear()
     func showFavoriteDetail(forFavor favorite: FavoriteBeer)
 }
 
 protocol FavoriteBeerInteractorOutputProtocol: class {
     // INTERACTOR -> PRESENTER
     func didRetrieveBeers(_ favorites: [FavoriteBeer])
+    func updateFavoriteBeers(_ favorites: [FavoriteBeer])
     func onError()
 }
 
@@ -47,6 +49,7 @@ protocol FavoriteBeerInteractorInputProtocol: class {
     
     // PRESENTER -> INTERACTOR
     func retrieveFavoriteBeer()
+    func updateFavoriteBeer()
 }
 
 protocol FavoriteBeerDataManagerInputProtocol: class {
@@ -56,6 +59,7 @@ protocol FavoriteBeerDataManagerInputProtocol: class {
 protocol FavoriteBeerLocalDataManagerOutputProtocol: class {
     // REMOTEDATAMANAGER -> INTERACTOR
     func onBeersRetrieved(_ favorites: [FavoriteBeer])
+    func updateFavoriteBeers(_ favorites: [FavoriteBeer])
     func onError()
 }
 
@@ -63,5 +67,4 @@ protocol FavoriteBeerLocalDataManagerInputProtocol: class {
     // INTERACTOR -> LOCALDATAMANAGER
     func retrieveFavoriteBeer() throws -> Results<FavoriteBeer>
     func saveFavorite(tagLine: String, title: String, imageUrl: String, content: String) throws
-    func deleteFavorite(favorite: FavoriteBeer)
 }

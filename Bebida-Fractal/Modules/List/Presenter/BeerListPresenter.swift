@@ -27,12 +27,7 @@ class BeerListPresenter: BeerListPresenterProtocol{
     }
     
     func deleteFavorite(forBeer favorite: Beer){
-        let favor = FavoriteBeer()
-        favor.content = favorite.content
-        favor.tagLine = favorite.tagLine
-        favor.imageUrl = favorite.imageUrl
-        favor.title = favorite.title
-        interactor?.deleteFavorite(favorite: favor)
+        interactor?.deleteFavorite(favorite: favorite)
     }
     
     func isFavorite(beer:Beer) -> Bool{
